@@ -1,0 +1,15 @@
+info:
+  name: 4.1.2 Get Log By ID
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{base_url}}/logs/application/{id}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

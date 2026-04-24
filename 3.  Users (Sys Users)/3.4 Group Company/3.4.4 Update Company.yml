@@ -1,0 +1,15 @@
+info:
+  name: 3.4.4 Update Company
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{base_url}}/group-companies/{id}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: 5.6.1 Get Exceptions
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{base_url}}/email-exceptions"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

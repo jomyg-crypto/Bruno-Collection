@@ -1,0 +1,15 @@
+info:
+  name: 5.2.3 Create Template
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{base_url}}/email-templates"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

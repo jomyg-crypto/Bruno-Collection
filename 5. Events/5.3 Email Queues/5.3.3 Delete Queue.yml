@@ -1,0 +1,15 @@
+info:
+  name: 5.3.3 Delete Queue
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{base_url}}/email-queues/{id}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

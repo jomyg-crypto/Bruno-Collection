@@ -1,0 +1,7 @@
+info:
+  name: 5.7 Web Notification Template
+  type: folder
+  seq: 7
+
+request:
+  auth: inherit

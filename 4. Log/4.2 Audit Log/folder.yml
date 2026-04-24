@@ -1,0 +1,7 @@
+info:
+  name: 4.2 Audit Log
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

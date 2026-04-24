@@ -1,0 +1,15 @@
+info:
+  name: 3.3.3 Create Designation
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{base_url}}/designations"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

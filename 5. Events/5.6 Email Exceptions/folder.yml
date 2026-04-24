@@ -1,0 +1,7 @@
+info:
+  name: 5.6 Email Exceptions
+  type: folder
+  seq: 6
+
+request:
+  auth: inherit

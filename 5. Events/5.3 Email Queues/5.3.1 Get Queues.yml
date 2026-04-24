@@ -1,0 +1,15 @@
+info:
+  name: 5.3.1 Get Queues
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{base_url}}/email-queues"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
