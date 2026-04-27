@@ -1,0 +1,52 @@
+info:
+  name: 5.5.4- Update Clear Settings✅
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{base_url}}/notification/settings/configuration/action"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ClearSetting\":[\r
+
+      \        {\r
+
+      \    \"TemplateId\":\"1\",\r
+
+      \    \"IsClearNotificationHistory\":false,\r
+
+      \    \"ClearNotificationHistoryOlder\":1\r
+
+      \    },\r
+
+      \    {\r
+
+      \    \"TemplateId\":\"2\",\r
+
+      \    \"IsClearNotificationHistory\":true,\r
+
+      \    \"ClearNotificationHistoryOlder\":100\r
+
+      \    },{\r
+
+      \    \"TemplateId\":\"3\",\r
+
+      \    \"IsClearNotificationHistory\":true,\r
+
+      \    \"ClearNotificationHistoryOlder\":100\r
+
+      \    }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

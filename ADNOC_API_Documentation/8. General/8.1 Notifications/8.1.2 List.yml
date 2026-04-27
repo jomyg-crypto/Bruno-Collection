@@ -6,7 +6,21 @@ info:
 http:
   method: GET
   url: "{{base_url}}/usernotifications"
-  auth: inherit
+  body:
+    type: json
+    data: |-
+      {
+          "filters": {
+              "query": "",
+              "OrderBy" :""
+          },
+          "pagination": {
+              "pageNo": 1,
+              "limit": 10
+          }
+      }
+  auth:
+    type: bearer
 
 settings:
   encodeUrl: true

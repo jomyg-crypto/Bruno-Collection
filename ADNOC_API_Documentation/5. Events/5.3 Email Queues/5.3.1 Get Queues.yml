@@ -10,28 +10,21 @@ http:
     type: json
     data: |-
       {
-        "filters": {
-          "appId": 1,
-          "templateId": 5,
-          "emailTo": "user@example.com",
-          "sendStatus": true,
-          "retryCount": 2,
-          "sendDateFrom": "2025-01-01",
-          "sendDateTo": "2025-12-31",
-          "createdFrom": "2025-01-01",
-          "createdTo": "2025-12-31"
-        },
-        "pagination": {
-          "pageNo": 1,
-          "limit": 50
-        },
-        "sort": {
+          "filters": {
+              "QUERY": ""
+          },
+          "pagination": {
+              "pageNo": 1,
+              "limit": 15
+          },
+         "sort": {
           "field": "CreatedOn",
           "order": "desc"
         }
       }
   auth:
     type: bearer
+    token: ""
 
 settings:
   encodeUrl: true

@@ -6,7 +6,8 @@ info:
 http:
   method: GET
   url: "{{base_url}}/usernotifications/{id}"
-  auth: inherit
+  auth:
+    type: bearer
 
 settings:
   encodeUrl: true

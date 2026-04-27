@@ -8,17 +8,20 @@ http:
   url: "{{base_url}}/email-templates/{id}"
   body:
     type: json
-    data: |-
+    data: |
       {
+         "templateId": 1,
+                  "isEnable": true,
+                  "templateCode": "WLCM",
         "subject": "Updated Welcome Email",
         "body": "<html><body><h1>Welcome Again!</h1></body></html>",
-        "isEnabled": 1,
         "description": "Updated template",
         "isClearNotificationHistory": 1,
         "updatedBy": "admin_user"
       }
   auth:
     type: bearer
+    token: ""
 
 settings:
   encodeUrl: true

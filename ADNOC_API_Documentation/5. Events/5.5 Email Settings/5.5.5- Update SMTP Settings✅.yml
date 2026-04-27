@@ -1,0 +1,38 @@
+info:
+  name: 5.5.5- Update SMTP Settings✅
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{base_url}}/notification/settings/smtp"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"nSettingsID\": 1,\r
+
+      \    \"senderName\": \"PMS TEST\",\r
+
+      \    \"senderEmail\": \"user@gmail.com\",\r
+
+      \    \"emailHost\": \"smtp.gmail.com\",\r
+
+      \    \"smtPort\": \"587\",\r
+
+      \    \"eTimeOut\": \"20:00\",\r
+
+      \    \"enableSSL\": true,\r
+
+      \    \"enableNotification\": true,\r
+
+      \    \"emailPassword\": \"wnkqpmajdojmunzy\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

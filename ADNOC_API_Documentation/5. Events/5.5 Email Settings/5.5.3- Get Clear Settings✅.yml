@@ -1,0 +1,28 @@
+info:
+  name: 5.5.3- Get Clear Settings✅
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{dev_url}}/notification/settings/configuration"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"filters\" : {\r
+
+      \        \"query\" : \"\",\r
+
+      \        \"OrderBy\" : \"\"\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
