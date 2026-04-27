@@ -1,7 +1,0 @@
-info:
-  name: 5.3 Email Queues
-  type: folder
-  seq: 3
-
-request:
-  auth: inherit
