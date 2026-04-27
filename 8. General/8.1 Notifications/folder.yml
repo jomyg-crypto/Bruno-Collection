@@ -1,7 +1,0 @@
-info:
-  name: 8.1 Notifications
-  type: folder
-  seq: 1
-
-request:
-  auth: inherit
