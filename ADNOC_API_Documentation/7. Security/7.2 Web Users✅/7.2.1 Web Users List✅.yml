@@ -1,0 +1,36 @@
+info:
+  name: 7.2.1 Web Users List✅
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{adnoc_url}}/security/webusers"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"filters\": {\r
+
+      \        \"query\": \"  \",\r
+
+      \        \"OrderBy\":\"createdon desc\"\r
+
+      \    },\r
+
+      \    \"pagination\": {\r
+
+      \        \"pageNo\": 1,\r
+
+      \        \"limit\": 100\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

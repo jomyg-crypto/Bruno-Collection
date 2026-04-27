@@ -1,0 +1,43 @@
+info:
+  name: 7.2.5 Edit Web User✅
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{base_url}}/security/webusers/action"
+  body:
+    type: json
+    data: |-
+      {
+          "fK_UserUniqueID": 1002,
+          "authenticationType": 1,
+          "webUserPrivileges": [
+              {
+                  "accessprivilegeID": 436,
+                  "fK_SysUserID": 47,
+                  "fk_CompanyID": 1,
+                  "fK_Site": 6,
+                  "fk_FLevel": 15,
+                  "fK_Zone": 20,
+                  "createdOn": "2023-05-11T18:08:03.9",
+                  "createdBy": "47",
+                  "updatedOn": "2023-05-26T10:55:25.14",
+                  "updatedBy": "29",
+                  "createdUser": "Jasmin Demo ",
+                  "updatedUser": "Sahad c Sahad Sahad",
+                  "rownum": 1
+              }
+          ],
+          "fK_WebUserType": 2,
+          "emailID": "Albinsha@gmil.com",
+          "fK_RoleID": "3",
+          "sysUserID": 47
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

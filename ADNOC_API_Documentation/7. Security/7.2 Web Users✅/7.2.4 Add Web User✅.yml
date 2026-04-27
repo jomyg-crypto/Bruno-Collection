@@ -1,0 +1,29 @@
+info:
+  name: 7.2.4 Add Web User✅
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{dev_url}}/security/webusers/action"
+  body:
+    type: json
+    data: |-
+      {       
+              "fK_UserUniqueID": 31,
+              "fK_RoleID": 5,
+              "fK_WebUserType": 1,
+              "emailID": "adhil@gmail.com",
+              "authenticationType": 1,
+              "loginPassword": "adhil@gmail.com",
+              "webUserPrivileges": [
+                 
+              ]
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

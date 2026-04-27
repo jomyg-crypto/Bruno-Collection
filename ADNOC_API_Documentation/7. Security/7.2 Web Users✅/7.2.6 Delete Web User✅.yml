@@ -1,11 +1,14 @@
 info:
-  name: 7.2.5 Delete
+  name: 7.2.6 Delete Web User✅
   type: http
-  seq: 5
+  seq: 6
 
 http:
   method: DELETE
-  url: "{{base_url}}/security/webusers/action/{id}"
+  url: "{{dev_url}}/security/webusers/action/3"
+  body:
+    type: json
+    data: ""
   auth: inherit
 
 settings:
