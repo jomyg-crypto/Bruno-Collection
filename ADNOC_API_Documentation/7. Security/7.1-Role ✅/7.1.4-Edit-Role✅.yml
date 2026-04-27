@@ -1,0 +1,487 @@
+info:
+  name: 7.1.4-Edit-Role✅
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{production_base_url}}/security/roles/action"
+  body:
+    type: json
+    data: |
+      {
+          "RoleID": 7,
+          "RoleName": "role5",
+          "Remarks": "",
+          "DashboardType": 2,
+          "privileges": [
+              {
+                  "fK_SubModuleID": 34,
+                  "sub_module_name": "Dashboards",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 279,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 1,
+                  "sub_module_name": "Find A Car",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 280,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 2,
+                  "sub_module_name": "Allocated Parking",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 281,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 3,
+                  "sub_module_name": "Real Time Monitoring",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 282,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 4,
+                  "sub_module_name": "Availability Check",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 283,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 5,
+                  "sub_module_name": "Parking History",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 284,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 6,
+                  "sub_module_name": "Transactions",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 285,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 7,
+                  "sub_module_name": "Parking Requests",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 286,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 8,
+                  "sub_module_name": "Parking Violations",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 287,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 9,
+                  "sub_module_name": "Black Listed Vehicles",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 288,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 10,
+                  "sub_module_name": "Report Violation",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 289,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 11,
+                  "sub_module_name": "Users",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 290,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 46,
+                  "sub_module_name": "Visitors",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 291,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 12,
+                  "sub_module_name": "Parking Policies",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 292,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 13,
+                  "sub_module_name": "Violation Policies",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 293,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 14,
+                  "sub_module_name": "Policy Assignment",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 294,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 35,
+                  "sub_module_name": "Reports & Dashboards",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 295,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 15,
+                  "sub_module_name": "Parking Zones",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 296,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 16,
+                  "sub_module_name": "Notifications",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 297,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 17,
+                  "sub_module_name": "Notification Exceptions",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 298,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 18,
+                  "sub_module_name": "Notification Settings",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 299,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 19,
+                  "sub_module_name": "Notification History",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 300,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 20,
+                  "sub_module_name": "Application Logs",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 301,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 21,
+                  "sub_module_name": "Audit Logs",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 302,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 22,
+                  "sub_module_name": "Department",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 303,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 23,
+                  "sub_module_name": "Designation",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 304,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 24,
+                  "sub_module_name": "Location",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 305,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 25,
+                  "sub_module_name": "Rejection Reason",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 306,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 36,
+                  "sub_module_name": "Site",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 307,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 37,
+                  "sub_module_name": "Building",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 308,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 38,
+                  "sub_module_name": "Floor",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 309,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 39,
+                  "sub_module_name": "Zone",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 310,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 40,
+                  "sub_module_name": "Bay",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 311,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 41,
+                  "sub_module_name": "User Type",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 312,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 42,
+                  "sub_module_name": "Priority Level",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 313,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 43,
+                  "sub_module_name": "Vehicle Plate Category",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 314,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 44,
+                  "sub_module_name": "Violation Reason",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 315,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 45,
+                  "sub_module_name": "Bay Type",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 316,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 26,
+                  "sub_module_name": "Application Settings",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 317,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 27,
+                  "sub_module_name": "Data Synchronization",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 318,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 28,
+                  "sub_module_name": "License",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 319,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 29,
+                  "sub_module_name": "Company Profile",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 320,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 30,
+                  "sub_module_name": "Roles",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 321,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 31,
+                  "sub_module_name": "Web Users",
+                  "isView": true,
+                  "isCreate": true,
+                  "isEdit": true,
+                  "isDelete": true,
+                  "prevID": 322,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 32,
+                  "sub_module_name": "Web Users",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 323,
+                  "fK_RoleID": 7
+              },
+              {
+                  "fK_SubModuleID": 33,
+                  "sub_module_name": "Password Policy",
+                  "isView": false,
+                  "isCreate": false,
+                  "isEdit": false,
+                  "isDelete": false,
+                  "prevID": 324,
+                  "fK_RoleID": 7
+              }
+          ],
+          "IsEnable": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

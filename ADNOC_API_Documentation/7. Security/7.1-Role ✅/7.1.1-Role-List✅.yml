@@ -1,0 +1,36 @@
+info:
+  name: 7.1.1-Role-List✅
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/security/roles"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"filters\": {\r
+
+      \        \"query\": \"\",\r
+
+      \        \"OrderBy\" :\"\"\r
+
+      \    },\r
+
+      \    \"pagination\": {\r
+
+      \        \"pageNo\": 1,\r
+
+      \        \"limit\": 10\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
