@@ -1,0 +1,32 @@
+info:
+  name: 7.3.3 Add Web User Request✅
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{dev_url}}/security/webusers/requests/action"
+  body:
+    type: json
+    data: "\r
+
+      {\r
+
+      \    \"requestedFor\": 60139,\r
+
+      \    \"startDate\": \"2022-11-30T18:30:00.000Z\",\r
+
+      \    \"endDate\": \"2022-12-29T18:30:00.000Z\",\r
+
+      \    \"ZoneIDs\": \"5\",\r
+
+      \    \"userResponsibilities\": \"Junail New zone\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

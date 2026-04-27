@@ -1,0 +1,26 @@
+info:
+  name: 7.3.4 Request Status Change ✅
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{dev_url}}/security/webusers/requests/status"
+  body:
+    type: json
+    data: |-
+      {
+          "sRequestID": 42,
+          "Status": 1,
+          "ApproverRemarks": "Approved for email checking",
+          "LoginID": "afreen@gmil.com",
+          "LoginPassword": "Afreen@123",
+          "roleID": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,36 @@
+info:
+  name: 7.4.2 -Update Policy✅
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{dev_url}}/security/password-policy"
+  body:
+    type: json
+    data: "{\r
+
+      \            \"pwdPolicyID\": 1,\r
+
+      \            \"minimumPWdLength\": 5,\r
+
+      \            \"requirdUppercaseLetter\": true,\r
+
+      \            \"requiredLowercaseLetter\": true,\r
+
+      \            \"requeirdOneNumber\": true,\r
+
+      \            \"requiredSymbolCharacter\": false,\r
+
+      \            \"passwordExpiryDays\": 30,\r
+
+      \            \"enforcePwdHistory\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

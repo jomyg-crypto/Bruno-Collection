@@ -1,0 +1,36 @@
+info:
+  name: 7.3.1 Web Users Request List✅
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{production_base_url}}/security/webusers/requests"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"filters\": {\r
+
+      \        \"query\": \"\",\r
+
+      \        \"orderby\" : \"\"\r
+
+      \    },\r
+
+      \    \"pagination\": {\r
+
+      \        \"pageNo\": 1,\r
+
+      \        \"limit\": 100\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

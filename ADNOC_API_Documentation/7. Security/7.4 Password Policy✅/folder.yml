@@ -1,0 +1,7 @@
+info:
+  name: 7.4 Password Policy✅
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit
