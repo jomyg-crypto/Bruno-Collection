@@ -1,0 +1,24 @@
+info:
+  name: 3.3.3 Create Designation
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{base_url}}/designations"
+  body:
+    type: json
+    data: |-
+      {
+        "designationName": "Software Engineer",
+        "isActive": true,
+        "createdBy": "admin_user"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

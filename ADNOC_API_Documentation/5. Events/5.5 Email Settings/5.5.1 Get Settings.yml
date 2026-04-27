@@ -1,0 +1,37 @@
+info:
+  name: 5.5.1 Get Settings
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/email-settings"
+  body:
+    type: json
+    data: |-
+      {
+        "filters": {
+          "appId": 1,
+          "templateId": 5,
+          "emailTo": "admin@example.com",
+          "sendStatus": true,
+          "createdFrom": "2025-01-01",
+          "createdTo": "2025-12-31"
+        },
+        "pagination": {
+          "pageNo": 1,
+          "limit": 20
+        },
+        "sort": {
+          "field": "CreatedOn",
+          "order": "desc"
+        }
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

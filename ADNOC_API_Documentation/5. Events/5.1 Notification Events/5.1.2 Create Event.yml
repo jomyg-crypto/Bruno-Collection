@@ -1,0 +1,25 @@
+info:
+  name: 5.1.2 Create Event
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_url}}/notification-events"
+  body:
+    type: json
+    data: |-
+      {
+        "appId": 1,
+        "appEventId": 10,
+        "appEventName": "USER_LOGIN",
+        "msgType": 2,
+        "createdBy": "system"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

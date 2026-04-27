@@ -1,0 +1,30 @@
+info:
+  name: 5.7.2 Create
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_url}}/web-notification-templates"
+  body:
+    type: json
+    data: |-
+      {
+        "appId": 1,
+        "templateCode": "USER_ALERT",
+        "subject": "System Alert",
+        "body": "You have a new notification",
+        "isEnabled": 1,
+        "description": "Alert template",
+        "isClearNotificationHistory": 0,
+        "createdBy": "admin_user"
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

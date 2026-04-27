@@ -1,0 +1,18 @@
+info:
+  name: 6.2.3-GeneralSettings✅
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{dev_url}}/ApplicationSettings/applicationsettings/general_settings"
+  body:
+    type: json
+    data: "{\r\n    \"AppKey\":\"\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

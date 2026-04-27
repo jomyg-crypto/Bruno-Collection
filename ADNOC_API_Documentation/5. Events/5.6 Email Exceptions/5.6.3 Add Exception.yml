@@ -1,0 +1,28 @@
+info:
+  name: 5.6.3 Add Exception
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{base_url}}/email-exceptions/action"
+  body:
+    type: json
+    data: |-
+      {
+        "appId": 1,
+        "templateIds": "1,2,3",
+        "description": "Disable emails during maintenance window",
+        "isActive": true,
+        "startDate": "2025-04-25T00:00:00",
+        "endDate": "2025-04-26T23:59:59",
+        "createdBy": "admin_user"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

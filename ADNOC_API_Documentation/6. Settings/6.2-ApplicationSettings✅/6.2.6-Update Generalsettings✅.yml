@@ -1,0 +1,96 @@
+info:
+  name: 6.2.6-Update Generalsettings✅
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{prod_url}}/ApplicationSettings/applicationsettings/action/general_settings"
+  body:
+    type: json
+    data: "{\r
+
+      \     \"Settings\":[\r
+
+      \        {\r
+
+      \            \"settingsID\": 7,\r
+
+      \            \"settingsValue\": \"3\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 8,\r
+
+      \            \"settingsValue\": \"false\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 9,\r
+
+      \            \"settingsValue\": \"21\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 11,\r
+
+      \            \"settingsValue\": \"21\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 12,\r
+
+      \            \"settingsValue\": \"false\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 13,\r
+
+      \            \"settingsValue\": \"1\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 18,\r
+
+      \            \"settingsValue\": \"21\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 19,\r
+
+      \            \"settingsValue\": \"21\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 22,\r
+
+      \            \"settingsValue\": \"21\"\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

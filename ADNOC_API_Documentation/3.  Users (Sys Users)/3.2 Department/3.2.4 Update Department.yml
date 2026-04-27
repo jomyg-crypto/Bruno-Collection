@@ -1,0 +1,23 @@
+info:
+  name: 3.2.4 Update Department
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{base_url}}/departments/{id}"
+  body:
+    type: json
+    data: |-
+      {
+        "departmentName": "Human Resources",
+        "isActive": true,
+        "updatedBy": "admin_user"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

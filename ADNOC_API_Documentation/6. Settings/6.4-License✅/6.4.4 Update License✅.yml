@@ -1,0 +1,20 @@
+info:
+  name: 6.4.4 Update License✅
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://103.104.45.252:3005/api/ApplicationSettings/cpk
+  body:
+    type: multipart-form
+    data:
+      - name: File
+        type: file
+        value: []
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

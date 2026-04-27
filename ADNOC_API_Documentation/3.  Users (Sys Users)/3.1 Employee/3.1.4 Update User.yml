@@ -1,0 +1,29 @@
+info:
+  name: 3.1.4 Update User
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{base_url}}/users/{id}"
+  body:
+    type: json
+    data: |-
+      {
+        "FK_RoleID": 3,
+        "Username": "john_doe_updated",
+        "Email": "john.updated@example.com",
+        "IsActive": true,
+        "Password": "NewSecurePassword123!",
+        "Remarks": "Updated user details",
+        "UpdatedBy": "admin_user"
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,16 @@
+info:
+  name: 5.2.5 Delete Template
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{base_url}}/email-templates/{id}"
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

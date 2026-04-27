@@ -1,0 +1,41 @@
+info:
+  name: 5.6.1 Get Exceptions
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/email-exceptions"
+  body:
+    type: json
+    data: |-
+      {
+        "filters": {
+          "appId": 1,
+          "isActive": true,
+          "isDelete": false,
+          "templateIds": "1,2,3",
+          "startDateFrom": "2025-01-01",
+          "startDateTo": "2025-12-31",
+          "endDateFrom": "2025-01-01",
+          "endDateTo": "2025-12-31",
+          "createdFrom": "2025-01-01",
+          "createdTo": "2025-12-31"
+        },
+        "pagination": {
+          "pageNo": 1,
+          "limit": 20
+        },
+        "sort": {
+          "field": "CreatedOn",
+          "order": "desc"
+        }
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

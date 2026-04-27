@@ -1,0 +1,29 @@
+info:
+  name: 5.2.3 Create Template
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{base_url}}/email-templates"
+  body:
+    type: json
+    data: |-
+      {
+        "appId": 1,
+        "templateCode": "WELCOME_EMAIL",
+        "subject": "Welcome to Our Platform",
+        "body": "<html><body><h1>Welcome!</h1></body></html>",
+        "isEnabled": 1,
+        "description": "Welcome email template",
+        "isClearNotificationHistory": 0,
+        "createdBy": "admin_user"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: 7.3 Password Policy
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit

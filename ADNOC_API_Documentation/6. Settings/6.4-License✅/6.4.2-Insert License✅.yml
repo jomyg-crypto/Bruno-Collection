@@ -1,0 +1,26 @@
+info:
+  name: 6.4.2-Insert License✅
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{dev_url}}/ApplicationSettings/license/action"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"LicenseKey\":\"xyzyzyzyzyzyzyzyzyzyzy\",\r
+
+      \    \"ToDate\":\"2022-10-15T07:32:05\",\r
+
+      \    \"FromDate\":\"2022-10-15T07:32:05\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

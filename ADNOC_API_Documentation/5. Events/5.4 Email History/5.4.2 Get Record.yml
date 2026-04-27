@@ -1,0 +1,16 @@
+info:
+  name: 5.4.2 Get Record
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{base_url}}/email-history/{id}"
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

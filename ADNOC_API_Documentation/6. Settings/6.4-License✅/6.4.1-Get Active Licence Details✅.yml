@@ -1,0 +1,18 @@
+info:
+  name: 6.4.1-Get Active Licence Details✅
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{dev_url}}/ApplicationSettings/license"
+  auth:
+    type: basic
+    username: test-googerit
+    password: AVA7SHq8xuMZXKBA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

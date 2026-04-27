@@ -1,0 +1,56 @@
+info:
+  name: 6.2.7-Update Data Cleanup Settings✅
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{base_url_2}}/ApplicationSettings/applicationsettings/action/data_cleanup_settings"
+  body:
+    type: json
+    data: "{\r
+
+      \     \"settings\":[\r
+
+      \        {\r
+
+      \            \"settingsID\": 6,\r
+
+      \            \"settingsValue\": \"false\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 11,\r
+
+      \            \"settingsValue\": \"301\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 26,\r
+
+      \            \"settingsValue\": \"false\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 27,\r
+
+      \            \"settingsValue\": \"301\"\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

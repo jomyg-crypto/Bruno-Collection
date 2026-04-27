@@ -1,0 +1,24 @@
+info:
+  name: 6.2.1-appsettings List✅
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{dev_url}}/ApplicationSettings/applicationsettings"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"AppKey\":\"\",\r
+
+      \    \"GroupKey\":\"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

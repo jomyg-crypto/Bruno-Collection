@@ -1,0 +1,36 @@
+info:
+  name: 3.3.1 Get Designations
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/designations"
+  body:
+    type: json
+    data: |-
+      {
+        "filters": {
+          "designationName": "Engineer",
+          "isActive": true,
+          "createdFrom": "2025-01-01",
+          "createdTo": "2025-12-31"
+        },
+        "pagination": {
+          "pageNo": 1,
+          "limit": 20
+        },
+        "sort": {
+          "field": "CreatedOn",
+          "order": "desc"
+        }
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

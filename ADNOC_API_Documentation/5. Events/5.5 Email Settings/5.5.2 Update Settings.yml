@@ -1,0 +1,28 @@
+info:
+  name: 5.5.2 Update Settings
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{base_url}}/email-settings"
+  body:
+    type: json
+    data: |-
+      {
+        "emailTo": "support@example.com",
+        "subject": "System Alert Updated",
+        "emailBody": "<html><body>Updated content</body></html>",
+        "sendStatus": true,
+        "retryCount": 1,
+        "sendDate": "2025-04-25",
+        "updatedBy": "admin_user"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: 3.3.4 Update Designation
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{base_url}}/designations/{id}"
+  body:
+    type: json
+    data: |-
+      {
+        "designationName": "Senior Software Engineer",
+        "isActive": true,
+        "updatedBy": "admin_user"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

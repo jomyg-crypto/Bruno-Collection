@@ -1,0 +1,27 @@
+info:
+  name: 5.2.4 Update Template
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{base_url}}/email-templates/{id}"
+  body:
+    type: json
+    data: |-
+      {
+        "subject": "Updated Welcome Email",
+        "body": "<html><body><h1>Welcome Again!</h1></body></html>",
+        "isEnabled": 1,
+        "description": "Updated template",
+        "isClearNotificationHistory": 1,
+        "updatedBy": "admin_user"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

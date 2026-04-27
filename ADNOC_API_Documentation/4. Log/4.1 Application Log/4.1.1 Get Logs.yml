@@ -1,0 +1,39 @@
+info:
+  name: 4.1.1 Get Logs
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/logs/application"
+  body:
+    type: json
+    data: |-
+      {
+        "filters": {
+          "subModuleId": 10,
+          "eventKey": "USER_LOGIN",
+          "status": 1,
+          "ipAddress": "192.168.1.1",
+          "createdBy": "system",
+          "createdFrom": "2025-01-01T00:00:00",
+          "createdTo": "2025-12-31T23:59:59"
+        },
+        "pagination": {
+          "pageNo": 1,
+          "limit": 50
+        },
+        "sort": {
+          "field": "CreatedOn",
+          "order": "desc"
+        }
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

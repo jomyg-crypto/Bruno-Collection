@@ -1,0 +1,27 @@
+info:
+  name: 5.3.2 Add Queue
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{base_url}}/email-queues"
+  body:
+    type: json
+    data: |-
+      {
+        "appId": 1,
+        "templateId": 5,
+        "emailTo": "user@example.com",
+        "subject": "Welcome",
+        "emailBody": "<html><body>Welcome!</body></html>",
+        "createdBy": "system"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

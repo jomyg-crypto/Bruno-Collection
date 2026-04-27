@@ -1,0 +1,17 @@
+info:
+  name: 3.4.5 Delete Company
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{base_url}}/group-companies/{id}"
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

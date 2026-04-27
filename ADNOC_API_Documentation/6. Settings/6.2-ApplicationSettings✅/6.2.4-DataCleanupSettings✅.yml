@@ -1,0 +1,18 @@
+info:
+  name: 6.2.4-DataCleanupSettings✅
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{dev_url}}/ApplicationSettings/applicationsettings/data_cleanup_settings"
+  body:
+    type: json
+    data: "{\r\n    \"AppKey\":\"\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

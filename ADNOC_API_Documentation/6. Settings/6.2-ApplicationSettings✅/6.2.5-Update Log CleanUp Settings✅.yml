@@ -1,0 +1,64 @@
+info:
+  name: 6.2.5-Update Log CleanUp Settings✅
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{dev_url}}/ApplicationSettings/applicationsettings/action/log-cleanup-settings"
+  body:
+    type: json
+    data: "{\r
+
+      \     \"settings\":[\r
+
+      \        {\r
+
+      \            \"settingsID\": 1,\r
+
+      \            \"settingsValue\": \"true\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 2,\r
+
+      \            \"settingsValue\": \"201\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 3,\r
+
+      \            \"settingsValue\": \"true\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 4,\r
+
+      \            \"settingsValue\": \"101\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"settingsID\": 5,\r
+
+      \            \"settingsValue\": \"true\"\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

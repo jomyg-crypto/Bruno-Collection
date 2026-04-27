@@ -1,0 +1,40 @@
+info:
+  name: 5.3.1 Get Queues
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/email-queues"
+  body:
+    type: json
+    data: |-
+      {
+        "filters": {
+          "appId": 1,
+          "templateId": 5,
+          "emailTo": "user@example.com",
+          "sendStatus": true,
+          "retryCount": 2,
+          "sendDateFrom": "2025-01-01",
+          "sendDateTo": "2025-12-31",
+          "createdFrom": "2025-01-01",
+          "createdTo": "2025-12-31"
+        },
+        "pagination": {
+          "pageNo": 1,
+          "limit": 50
+        },
+        "sort": {
+          "field": "CreatedOn",
+          "order": "desc"
+        }
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

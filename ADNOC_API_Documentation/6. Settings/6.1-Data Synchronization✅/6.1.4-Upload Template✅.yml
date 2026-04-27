@@ -1,0 +1,21 @@
+info:
+  name: 6.1.4-Upload Template✅
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{dev_url}}/ApplicationSettings/upload-template"
+  body:
+    type: multipart-form
+    data:
+      - name: csvfile
+        type: file
+        value: []
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

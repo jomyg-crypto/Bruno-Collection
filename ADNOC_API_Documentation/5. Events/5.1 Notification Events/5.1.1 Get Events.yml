@@ -1,0 +1,39 @@
+info:
+  name: 5.1.1 Get Events
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/notification-events"
+  body:
+    type: json
+    data: |-
+      {
+        "filters": {
+          "appId": 1,
+          "appEventId": 10,
+          "appEventName": "USER_LOGIN",
+          "msgType": 2,
+          "createdBy": "system",
+          "createdFrom": "2025-01-01",
+          "createdTo": "2025-12-31"
+        },
+        "pagination": {
+          "pageNo": 1,
+          "limit": 20
+        },
+        "sort": {
+          "field": "CreatedOn",
+          "order": "desc"
+        }
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

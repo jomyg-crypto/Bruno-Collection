@@ -1,0 +1,7 @@
+info:
+  name: 3.4 Group Company
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

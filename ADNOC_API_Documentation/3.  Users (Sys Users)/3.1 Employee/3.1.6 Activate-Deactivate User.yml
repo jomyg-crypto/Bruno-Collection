@@ -1,0 +1,23 @@
+info:
+  name: 3.1.6 Activate/Deactivate User
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: "{{base_url}}/users/{id}/status"
+  body:
+    type: json
+    data: |-
+      {
+        "isActive": true,
+        "updatedBy": "admin_user"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,37 @@
+info:
+  name: 5.8.1 Get Notifications
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/web-notifications"
+  body:
+    type: json
+    data: |-
+      {
+        "filters": {
+          "appId": 1,
+          "userId": 1001,
+          "isRead": false,
+          "title": "Alert",
+          "createdFrom": "2025-01-01",
+          "createdTo": "2025-12-31"
+        },
+        "pagination": {
+          "pageNo": 1,
+          "limit": 20
+        },
+        "sort": {
+          "field": "CreatedOn",
+          "order": "desc"
+        }
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

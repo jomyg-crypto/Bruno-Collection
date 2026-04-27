@@ -1,0 +1,27 @@
+info:
+  name: 5.6.4 Edit Exception
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{base_url}}/email-exceptions/action"
+  body:
+    type: json
+    data: |-
+      {
+        "templateIds": "2,3,4",
+        "description": "Updated exception",
+        "isActive": true,
+        "startDate": "2025-04-26T00:00:00",
+        "endDate": "2025-04-27T23:59:59",
+        "updatedBy": "admin_user"
+      }
+  auth:
+    type: bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: 8.1.3 Read
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{base_url}}/usernotifications/read"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

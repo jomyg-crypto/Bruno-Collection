@@ -1,0 +1,21 @@
+opencollection: 1.0.0
+
+info:
+  name: CPMS Enterprise Structured API - 1
+
+request:
+  variables:
+    - name: base_url
+      value: http://localhost:4000/api
+    - name: token
+      value: ""
+
+docs:
+  content: Fully numbered and structured API collection
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
