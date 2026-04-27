@@ -1,7 +1,0 @@
-info:
-  name: 6.3 License
-  type: folder
-  seq: 3
-
-request:
-  auth: inherit
